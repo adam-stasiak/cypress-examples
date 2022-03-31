@@ -1,0 +1,37 @@
+{
+    "chromeWebSecurity": false,
+    "defaultCommandTimeout": 8000,
+    "numTestsKeptInMemory": 10,
+    "experimentalFetchPolyfill": true,
+    "requestTimeout": 10000,
+    "ignoreTestFiles": [
+        "**/__snapshots__/*",
+        "**/__image_snapshots__/*"
+    ],
+    "baseUrl": "http://localhost:8088",
+    "env": {
+        "cypress-plugin-snapshots": {
+            "autoCleanUp": false,
+            "autopassNewSnapshots": true,
+            "diffLines": 3,
+            "normalizeJson": true,
+            "prettier": true,
+            "imageConfig": {
+                "createDiffImage": true,
+                "resizeDevicePixelRatio": true,
+                "threshold": 0.01,
+                "thresholdType": "percent"
+            },
+            "screenshotConfig": {
+                "blackout": [],
+                "capture": "fullPage",
+                "clip": null,
+                "disableTimersAndAnimations": true,
+                "log": false,
+                "scale": false,
+                "timeout": 30000
+            },
+            "backgroundBlend": "difference"
+        }
+    }
+}
