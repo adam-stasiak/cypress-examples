@@ -1,6 +1,5 @@
 describe('ci example', () => {
   beforeEach(() => {
-    cy.login();
   });
   
   it('iframe example', () => {
